@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida a la Página de Sara</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            text-align: center;
+            color: #fff;
+        }
+        header {
+            padding: 20px;
+            font-size: 2.5em;
+            font-weight: bold;
+            animation: fadeIn 2s;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60vh;
+        }
+        .btn {
+            background: #ff758c;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff5e78;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .gallery img {
+            margin: 10px;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>Bienvenida a la Página de Sara</header>
+    <div class="container">
+        <p>Hola, soy Sara! Bienvenida a mi espacio personal donde comparto mis pensamientos y creatividad.</p>
+        <button class="btn" onclick="showMessage()">Haz click aquí</button>
+    </div>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/200" alt="Imagen 1">
+        <img src="https://via.placeholder.com/200" alt="Imagen 2">
+        <img src="https://via.placeholder.com/200" alt="Imagen 3">
+        <img src="https://via.placeholder.com/200" alt="Imagen 4">
+    </div>
+    <script>
+        function showMessage() {
+            alert('¡Gracias por visitar mi página! ¡Que tengas un gran día!');
+        }
+    </script>
+</body>
+</html>
